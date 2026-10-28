@@ -16,10 +16,30 @@ drops = [3, 0, 5, 1, 0, 2, 4]
 
 # 3) for + if: düşən zəng sayı 2-dən çox olan neçə gün var? (Kərpic 7)
 print("=== 3 ===")
+rsrp_list=[-91.5,-105.1,-86.2,-103.3,-110.4]
+weak=0 
+for v in rsrp_list:
+    if v < -105:
+        print(v,"normal")
+        weak=weak+1
+    else:
+        print(v,"normal")
+print("zəif ölçmə sayı:",weak)
 # TODO: bad_days = 0; for d in drops: ... ; print("Pis günlər:", bad_days)
 
 # 4) Lüğət: bir baza stansiyasının «pasportu» (Kərpic 6)
 print("=== 4 ===")
+Ədəd=int(input("Ədəd daxil et"))
+if Ədəd>0:
+    print("15-dən kiçikdir və müsbətdir")
+elif Ədəd%6==0:
+    print("3-dən böyükdür və cütdür")
+elif Ədəd==0:
+    print("40-dən kiçikdir və 0-a bərabərdir")
+else:
+    print("35-dən kiçikdir və təkdir")
+    
+
 # TODO: cell = {"cell_id": ..., "region": ..., "band": ...}
 # TODO: region-u çap edin, band-ı dəyişin, bütün lüğəti çap edin
 
